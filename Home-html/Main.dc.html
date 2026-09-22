@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>there4u — home</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter+Tight:wght@400;500;600&display=swap');
+  body { margin: 0; background: #F6F4EE; font-family: "Inter Tight", ui-sans-serif, system-ui, sans-serif; }
+  a { color: #C1694A; text-decoration: none; }
+  a:hover { color: #A3543A; }
+  h1, h2, h3 { font-family: "Fraunces", ui-serif, Georgia, serif; font-weight: 400; margin: 0; }
+  button { font-family: "Inter Tight", ui-sans-serif, system-ui, sans-serif; cursor: pointer; }
+</style>
+</helmet>
+
+<div style="width: 100%; display: flex; flex-direction: column; background: #F6F4EE; color: #1C2B27;">
+
+  <!-- ===== HEADER ===== -->
+  <div style="width: 100%; box-sizing: border-box; padding: 0 64px; height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #DDD8CC; position: sticky; top: 0; background: #F6F4EEF2; backdrop-filter: blur(8px); z-index: 10;">
+    <div style="font-family: 'Fraunces', serif; font-size: 26px; letter-spacing: -0.01em; color: #1C2B27;">there4u<span style="color: #C1694A;">.</span></div>
+    <div style="display: flex; gap: 36px; align-items: center;">
+      <a href="#" style="font-size: 15px; color: #1C2B27;">Back &amp; spine</a>
+      <a href="#" style="font-size: 15px; color: #1C2B27;">Neck &amp; shoulder</a>
+      <a href="#" style="font-size: 15px; color: #1C2B27;">Knee &amp; joint</a>
+      <a href="#" style="font-size: 15px; color: #1C2B27;">Reviews</a>
+      <a href="#" style="font-size: 15px; color: #1C2B27;">About</a>
+    </div>
+    <div style="display: flex; gap: 22px; align-items: center;">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1C2B27" stroke-width="1.75"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1C2B27" stroke-width="1.75"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1C2B27" stroke-width="1.75"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+      <a href="#" style="background: #C1694A; color: #FBF7F2; font-size: 14px; font-weight: 500; padding: 11px 22px; border-radius: 9999px;">Shop now</a>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <div style="width: 100%; background: #1F3D3A; box-sizing: border-box; padding: 96px 64px 110px; display: flex; gap: 64px; align-items: center;">
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 28px; max-width: 560px;">
+      <div style="font-size: 13px; letter-spacing: 0.02em; color: #A9BDB6;">Relief, designed with care</div>
+      <h1 style="font-size: 58px; line-height: 1.04; letter-spacing: -0.02em; color: #F3F0E8;">Relief that meets you <em style="font-style: normal; color: #C1694A;">right there.</em></h1>
+      <p style="font-size: 17px; line-height: 1.6; color: #C7D3CD; max-width: 460px;">Adjustable braces, decompression belts and heated massagers built with physiotherapists, for the pain that shows up in your back, neck and knees every day.</p>
+      <div style="display: flex; gap: 14px; margin-top: 6px;">
+        <a href="#" style="background: #C1694A; color: #FBF7F2; font-size: 15px; font-weight: 500; padding: 15px 28px; border-radius: 9999px;">Shop pain relief</a>
+        <a href="#" style="border: 1px solid #4C635E; color: #F3F0E8; font-size: 15px; font-weight: 500; padding: 15px 28px; border-radius: 9999px;">How it works</a>
+      </div>
+    </div>
+    <div style="flex: 1; position: relative; max-width: 560px;">
+      <div style="width: 100%; aspect-ratio: 4/3; background: #294E49; border: 1px dashed #4C635E; border-radius: 24px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px; box-sizing: border-box;">
+        <span style="color: #A9BDB6; font-size: 13px; line-height: 1.5;">[Product photography: person wearing the lumbar support belt, everyday setting, soft natural light]</span>
+      </div>
+      <div style="position: absolute; left: -24px; bottom: -28px; background: #F6F4EE; border-radius: 16px; padding: 16px 20px; display: flex; align-items: center; gap: 12px; box-shadow: 0 12px 32px -16px rgba(0,0,0,0.35);">
+        <div style="display: flex;">
+          <div style="width: 32px; height: 32px; border-radius: 9999px; background: #D8C9B4; border: 2px solid #F6F4EE; margin-right: -10px;"></div>
+          <div style="width: 32px; height: 32px; border-radius: 9999px; background: #B6C7C0; border: 2px solid #F6F4EE; margin-right: -10px;"></div>
+          <div style="width: 32px; height: 32px; border-radius: 9999px; background: #C1694A; border: 2px solid #F6F4EE;"></div>
+        </div>
+        <div>
+          <div style="font-size: 13px; font-weight: 600; color: #1C2B27;">Trusted by 12,000+</div>
+          <div style="font-size: 12px; color: #5C6B65;">★★★★★ 4.8 average</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BENEFITS (two-column) ===== -->
+  <div style="width: 100%; box-sizing: border-box; padding: 110px 64px; display: flex; gap: 56px; align-items: center;">
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 22px; max-width: 460px;">
+      <div style="font-size: 13px; color: #5C6B65;">Why there4u</div>
+      <h2 style="font-size: 38px; line-height: 1.1; letter-spacing: -0.015em; color: #1C2B27;">Built for the relief that lasts through the day, not just the moment you put it on.</h2>
+      <p style="font-size: 16px; line-height: 1.65; color: #5C6B65;">Every design starts with a physiotherapist, not a factory catalog. Adjustable compression, breathable medical-grade materials, and a fit that stays put through a full work day, a walk, or a night's sleep.</p>
+      <a href="#" style="font-size: 15px; font-weight: 500; color: #1C2B27; display: flex; align-items: center; gap: 8px; margin-top: 4px;">See how we design <span style="color: #C1694A;">→</span></a>
+    </div>
+    <div style="flex: 1; display: flex; gap: 16px;">
+      <div style="flex: 1; aspect-ratio: 3/4; background: #EDE9DF; border: 1px dashed #DDD8CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; margin-top: 40px;">
+        <span style="color: #8A8F87; font-size: 12px; line-height: 1.5;">[Close-up: adjustable strap and breathable panel detail]</span>
+      </div>
+      <div style="flex: 1; aspect-ratio: 3/4; background: #EDE9DF; border: 1px dashed #DDD8CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box;">
+        <span style="color: #8A8F87; font-size: 12px; line-height: 1.5;">[Person stretching comfortably wearing back brace]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MISSION / 3 IMAGES ===== -->
+  <div style="width: 100%; background: #EFEBE2; box-sizing: border-box; padding: 100px 64px; display: flex; flex-direction: column; gap: 48px; align-items: center;">
+    <div style="text-align: center; max-width: 620px; display: flex; flex-direction: column; gap: 16px; align-items: center;">
+      <div style="font-size: 13px; color: #5C6B65;">Our approach</div>
+      <h2 style="font-size: 36px; line-height: 1.15; letter-spacing: -0.015em; color: #1C2B27;">We help you move through your day without pain running the schedule.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; width: 100%; max-width: 1200px;">
+      <div style="aspect-ratio: 3/4; background: #DED7C8; border: 1px dashed #C9C0AE; border-radius: 18px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box;">
+        <span style="color: #7A776E; font-size: 12px; line-height: 1.5;">[Person at a standing desk, back brace visible]</span>
+      </div>
+      <div style="aspect-ratio: 3/4; background: #DED7C8; border: 1px dashed #C9C0AE; border-radius: 18px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box; margin-top: 36px;">
+        <span style="color: #7A776E; font-size: 12px; line-height: 1.5;">[Person walking outdoors, knee support visible]</span>
+      </div>
+      <div style="aspect-ratio: 3/4; background: #DED7C8; border: 1px dashed #C9C0AE; border-radius: 18px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box;">
+        <span style="color: #7A776E; font-size: 12px; line-height: 1.5;">[Person relaxing on the sofa with neck massager]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <div style="width: 100%; box-sizing: border-box; padding: 110px 64px; display: flex; flex-direction: column; gap: 44px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 13px; color: #5C6B65;">Featured products</div>
+        <h2 style="font-size: 38px; letter-spacing: -0.015em; color: #1C2B27;">Find relief, faster.</h2>
+      </div>
+      <a href="#" style="font-size: 15px; font-weight: 500; color: #1C2B27; display: flex; align-items: center; gap: 8px;">Shop all products <span style="color: #C1694A;">→</span></a>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;">
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="aspect-ratio: 1/1; background: #FFFFFF; border: 1px solid #DDD8CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box;">
+          <span style="color: #8A8F87; font-size: 12px; line-height: 1.5;">[Adjustable lower back brace, product shot]</span>
+        </div>
+        <div style="font-size: 13px; color: #C1694A;">★★★★★ 4.8/5.0</div>
+        <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">Adjustable Lower Back Brace</div>
+        <div style="font-size: 15px; color: #5C6B65;">$49.00</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="aspect-ratio: 1/1; background: #FFFFFF; border: 1px solid #DDD8CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box;">
+          <span style="color: #8A8F87; font-size: 12px; line-height: 1.5;">[Lumbar decompression belt, product shot]</span>
+        </div>
+        <div style="font-size: 13px; color: #C1694A;">★★★★★ 4.7/5.0</div>
+        <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">Lumbar Decompression Belt</div>
+        <div style="font-size: 15px; color: #5C6B65;">$59.00</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="aspect-ratio: 1/1; background: #FFFFFF; border: 1px solid #DDD8CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box;">
+          <span style="color: #8A8F87; font-size: 12px; line-height: 1.5;">[Inflatable lumbar decompression belt, product shot]</span>
+        </div>
+        <div style="font-size: 13px; color: #C1694A;">★★★★★ 4.9/5.0</div>
+        <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">Inflatable Decompression Belt</div>
+        <div style="font-size: 15px; color: #5C6B65;">$64.00</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="aspect-ratio: 1/1; background: #FFFFFF; border: 1px solid #DDD8CC; border-radius: 20px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; box-sizing: border-box;">
+          <span style="color: #8A8F87; font-size: 12px; line-height: 1.5;">[Cervical neck &amp; shoulder massager, product shot]</span>
+        </div>
+        <div style="font-size: 13px; color: #C1694A;">★★★★★ 4.6/5.0</div>
+        <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">Neck &amp; Shoulder Massager</div>
+        <div style="font-size: 15px; color: #5C6B65;">$79.00</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== WHY US / TRUST STRIP ===== -->
+  <div style="width: 100%; box-sizing: border-box; padding: 80px 64px; border-top: 1px solid #DDD8CC; border-bottom: 1px solid #DDD8CC; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px;">
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C1694A" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg>
+      <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">Physiotherapist-consulted</div>
+      <div style="font-size: 14px; color: #5C6B65; line-height: 1.5;">Every design is reviewed for real support, not just look.</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C1694A" stroke-width="1.75"><rect x="1" y="7" width="15" height="12" rx="2"></rect><path d="M16 11h4l3 3v5h-7z"></path><circle cx="6" cy="21" r="2"></circle><circle cx="18.5" cy="21" r="2"></circle></svg>
+      <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">Free shipping over $50</div>
+      <div style="font-size: 14px; color: #5C6B65; line-height: 1.5;">Delivered in discreet packaging, 3-5 business days.</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C1694A" stroke-width="1.75"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+      <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">30-day returns</div>
+      <div style="font-size: 14px; color: #5C6B65; line-height: 1.5;">Not the right fit or feel? Send it back, no questions.</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C1694A" stroke-width="1.75"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"></path><circle cx="10" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      <div style="font-size: 15px; font-weight: 500; color: #1C2B27;">12,000+ customers</div>
+      <div style="font-size: 14px; color: #5C6B65; line-height: 1.5;">Managing back, neck and knee pain with us every day.</div>
+    </div>
+
+  </div>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <div style="width: 100%; background: #1F3D3A; box-sizing: border-box; padding: 110px 64px; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center;">
+    <div style="color: #C1694A; font-size: 15px; letter-spacing: 0.03em;">★★★★★</div>
+    <div style="max-width: 720px; font-family: 'Fraunces', serif; font-size: 30px; line-height: 1.4; color: #F3F0E8;">"I stopped dreading my afternoon commute. The lumbar belt takes the ache out of my lower back before it even starts."</div>
+    <div style="font-size: 14px; color: #A9BDB6;">Priya M. &nbsp;·&nbsp; verified there4u customer</div>
+  </div>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <div style="width: 100%; box-sizing: border-box; padding: 90px 64px; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center;">
+    <h2 style="font-size: 32px; letter-spacing: -0.01em; color: #1C2B27; max-width: 480px;">Get 10% off your first order</h2>
+    <p style="font-size: 15px; color: #5C6B65; max-width: 420px;">Join our list for relief tips, new product drops, and a code for your first order.</p>
+    <div style="display: flex; gap: 10px; margin-top: 6px;">
+      <input type="email" placeholder="you@email.com" style="width: 280px; padding: 14px 20px; border-radius: 9999px; border: 1px solid #DDD8CC; font-size: 14px; box-sizing: border-box; font-family: 'Inter Tight', sans-serif;">
+      <button style="background: #1C2B27; color: #F6F4EE; font-size: 14px; font-weight: 500; padding: 14px 26px; border-radius: 9999px; border: none;">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div style="width: 100%; background: #16241F; box-sizing: border-box; padding: 72px 64px 36px; display: flex; flex-direction: column; gap: 56px;">
+    <div style="display: flex; justify-content: space-between; gap: 48px;">
+      <div style="max-width: 280px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-family: 'Fraunces', serif; font-size: 24px; color: #F3F0E8;">there4u<span style="color: #C1694A;">.</span></div>
+        <div style="font-size: 14px; color: #93A39C; line-height: 1.6;">Everyday pain relief gear, designed with physiotherapists and built to actually stay on.</div>
+      </div>
+      <div style="display: flex; gap: 72px;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-size: 13px; color: #6C8079;">Shop</div>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Back &amp; spine</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Neck &amp; shoulder</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Knee &amp; joint</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Best sellers</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-size: 13px; color: #6C8079;">Support</div>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Shipping &amp; returns</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Size guide</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Contact us</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">FAQ</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-size: 13px; color: #6C8079;">Company</div>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">About there4u</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Our approach</a>
+          <a href="#" style="font-size: 14px; color: #DCE3DF;">Reviews</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top: 1px solid #263832; padding-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+      <div style="font-size: 13px; color: #6C8079;">© 2026 there4u. All rights reserved.</div>
+      <div style="display: flex; gap: 18px;">
+        <div style="font-size: 13px; color: #6C8079;">Privacy</div>
+        <div style="font-size: 13px; color: #6C8079;">Terms</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

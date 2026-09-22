@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 32% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 32% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 32% 12%;
+    --primary: 205 71% 16%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 205 60% 22%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 120 9% 98%;
+    --muted-foreground: 205 12% 44%;
+    --accent: 150 33% 52%;
+    --accent-foreground: 205 71% 16%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 16% 90%;
+    --input: 210 16% 90%;
+    --ring: 205 60% 30%;
+    --radius: 0.25rem;
+
+    /* Brand tokens */
+    --navy: #0B2A43;
+    --deep-navy: #071D2E;
+    --secondary-blue: #145A7A;
+    --trust-blue: #247BA0;
+    --light-blue: #EAF4F8;
+    --off-white: #F7F8F6;
+    --accent-green: #5FAF8A;
+    --dark-text: #14212B;
+    --muted-text: #66737D;
+
+    --font-heading: "Inter Tight", "Manrope", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Inter", "Geist", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Inter Tight", "Satoshi", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    color: var(--dark-text);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background: var(--navy);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.22em];
+  }
+  .container-px {
+    @apply px-6 md:px-10 lg:px-16;
+  }
+}
+
+@layer utilities {
+  .text-navy { color: var(--navy); }
+  .bg-navy { background-color: var(--navy); }
+  .bg-deep-navy { background-color: var(--deep-navy); }
+  .bg-off-white { background-color: var(--off-white); }
+  .bg-light-blue { background-color: var(--light-blue); }
+  .text-accent-green { color: var(--accent-green); }
+  .bg-accent-green { background-color: var(--accent-green); }
+  .text-trust-blue { color: var(--trust-blue); }
+  .bg-trust-blue { background-color: var(--trust-blue); }
+  .border-navy { border-color: var(--navy); }
+  .text-muted-brand { color: var(--muted-text); }
+
+  .heading-display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+  }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
