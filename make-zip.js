@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { execSync } from 'child_process';
+import AdmZip from 'adm-zip';
 
 const assetsDir = path.resolve('shopify-liquid-theme/assets');
 if (!fs.existsSync(assetsDir)) {
@@ -16,12 +16,13 @@ if (cssFile) fs.copyFileSync(path.join('dist/assets', cssFile), path.join(assets
 if (jsFile) fs.copyFileSync(path.join('dist/assets', jsFile), path.join(assetsDir, 'index.js'));
 if (shopifyJsFile) fs.copyFileSync(path.join('dist/assets', shopifyJsFile), path.join(assetsDir, 'shopify.js'));
 
+const zip = new AdmZip();
 const themeDir = path.resolve('shopify-liquid-theme');
+
+// Add all files/folders inside themeDir directly to root of zip
+zip.addLocalFolder(themeDir, '');
+
 const zipPath = path.resolve('kinetex-shopify-theme.zip');
+zip.writeZip(zipPath);
 
-if (fs.existsSync(zipPath)) {
-  fs.unlinkSync(zipPath);
-}
-
-execSync(`powershell -Command "Set-Location -Path '${themeDir}'; Compress-Archive -Path * -DestinationPath '${zipPath}' -Force"`);
-console.log('ZIP_CREATED_SUCCESSFULLY');
+console.log('ZIP_CREATED_WITH_ADM_ZIP');
