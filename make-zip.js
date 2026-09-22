@@ -23,5 +23,5 @@ if (fs.existsSync(zipPath)) {
   fs.unlinkSync(zipPath);
 }
 
-execSync(`powershell -Command "Compress-Archive -Path '${themeDir}\\*' -DestinationPath '${zipPath}' -Force"`);
+execSync(`powershell -Command "Set-Location -Path '${themeDir}'; Compress-Archive -Path * -DestinationPath '${zipPath}' -Force"`);
 console.log('ZIP_CREATED_SUCCESSFULLY');
