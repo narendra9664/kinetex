@@ -3,7 +3,7 @@ import Client from 'shopify-buy';
 // Initialize the Shopify Storefront Client
 export const shopifyClient = Client.buildClient({
   domain: 'mucwig-ua.myshopify.com',
-  storefrontAccessToken: 'f9b6ec7e0e6e96b899b03f0303d2c632',
+  storefrontAccessToken: 'd9fc8b9fa3b165f1be870f8add5558e1',
 });
 
 /**
