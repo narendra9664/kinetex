@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Image } from "@/components/ui/image";
 
 const HERO_IMG =
@@ -44,7 +45,7 @@ export default function Hero() {
             <span className="eyebrow text-white/60">For Every Body</span>
           </motion.div>
 
-          <h1 className="heading-display text-white text-[18vw] sm:text-[14vw] lg:text-[10.5rem] leading-[0.85]">
+          <h1 className="heading-display text-white text-[15vw] sm:text-[13vw] lg:text-[10.5rem] leading-[0.85]">
             <motion.span variants={item} className="block">
               STRENGTH
             </motion.span>
@@ -65,13 +66,13 @@ export default function Hero() {
           </motion.p>
 
           <motion.div variants={item} className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a
-              href="#featured"
-              className="group inline-flex items-center justify-center gap-2 bg-white text-navy px-8 py-4 text-sm font-semibold tracking-wide hover:bg-accent-green hover:text-white transition-colors duration-300"
+            <Link
+              to="/shop"
+              className="group inline-flex items-center justify-center gap-2 bg-white text-navy px-8 py-4 text-sm font-semibold tracking-wide hover:bg-accent-green transition-colors duration-300"
             >
               SHOP SUPPORT
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
             <a
               href="#categories"
               className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 text-sm font-semibold tracking-wide hover:bg-white/10 transition-colors duration-300"
@@ -81,22 +82,6 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Trust card */}
-        <motion.div
-          variants={item}
-          initial="hidden"
-          animate="show"
-          transition={{ delay: 1 }}
-          className="self-end max-w-xs bg-white/10 backdrop-blur-md border border-white/15 p-6 mt-12"
-        >
-          <div className="flex items-center gap-1 mb-2">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={14} className="fill-accent-green text-accent-green" />
-            ))}
-          </div>
-          <p className="text-white font-semibold text-sm">Trusted by active people</p>
-          <p className="text-white/60 text-sm mt-1">Designed for everyday movement</p>
-        </motion.div>
       </div>
     </section>
   );

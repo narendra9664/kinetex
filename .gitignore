@@ -3,3 +3,9 @@ dist
 .env
 .netlify
 *.local
+
+# Local tooling / build intermediates
+.claude/
+lead-magnet/source/guide.pdf
+lead-magnet/source/guide.html
+lead-magnet/source/prev/

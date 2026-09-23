@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>{{ page_title }}</title>
     {{ content_for_header }}
+    <script>
+      // Read by src/lib/siteConfig.js. siteUrl points at the Netlify site that
+      // hosts the free-guide PDF, guide images and the Slack lead relay.
+      window.MOTIONPLUSE_CONFIG = {
+        siteUrl: {{ settings.netlify_site_url | default: '' | json }},
+        guidePdfUrl: {{ settings.guide_pdf_url | default: '' | json }}
+      };
+    </script>
     <script type="module" crossorigin src="{{ 'index.js' | asset_url }}"></script>
     <link rel="stylesheet" crossorigin href="{{ 'index.css' | asset_url }}">
   </head>

@@ -1,0 +1,10 @@
+CONTACT INFORMATION
+(In Shopify this is a form, not a text box. Fill in each field with your details.)
+
+Trade name:        MotionPluse
+Legal name:        [LEGAL BUSINESS NAME, or your full name if you are a sole proprietor]
+Email:             narendrakumar9664@gmail.com
+Phone:             +91 77330 72738
+Physical address:  [BUSINESS ADDRESS]
+Business registration number / GSTIN (if you have one): [GSTIN]
+VAT number:        leave blank (not needed for India)

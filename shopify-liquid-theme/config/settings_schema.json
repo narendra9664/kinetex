@@ -1,10 +1,32 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Kinetix Motion Lab React Theme",
-    "theme_author": "Kinetix",
+    "theme_name": "MotionPluse React Theme",
+    "theme_author": "MotionPluse",
     "theme_version": "1.0.0",
     "theme_documentation_url": "https://github.com/narendra9664/kinetex",
     "theme_support_url": "https://github.com/narendra9664/kinetex"
+  },
+  {
+    "name": "Integrations",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Lead capture & free guide"
+      },
+      {
+        "type": "text",
+        "id": "netlify_site_url",
+        "label": "Netlify site URL",
+        "info": "Hosts the free guide PDF and sends sign-ups to Slack. Leave as is unless the Netlify site moves.",
+        "default": "https://kinetix-shopify-store-preview.netlify.app"
+      },
+      {
+        "type": "text",
+        "id": "guide_pdf_url",
+        "label": "Guide PDF URL (optional)",
+        "info": "Leave blank to use the PDF on the Netlify site. Or upload it under Content \u2192 Files and paste its URL."
+      }
+    ]
   }
 ]

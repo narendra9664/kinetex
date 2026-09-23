@@ -1,8 +1,18 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# The free guide is downloaded from the Shopify theme too (cross-origin), where
+# the <a download> attribute is ignored — force a download instead of a viewer.
+[[headers]]
+  for = "/guide/*.pdf"
+  [headers.values]
+    Content-Disposition = 'attachment; filename="MotionPluse-Pain-Free-Workday-Blueprint.pdf"'
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=86400"

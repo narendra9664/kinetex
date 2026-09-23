@@ -14,8 +14,8 @@ const items = [
   },
   {
     icon: <RotateCcw className="w-[26px] h-[26px] text-coral" strokeWidth={1.75} />,
-    title: '30-day returns',
-    desc: 'Not the right fit or feel? Send it back, no questions.',
+    title: 'Damage & defect cover',
+    desc: 'Arrived damaged or faulty? We replace or refund it.',
   },
   {
     icon: <Users className="w-[26px] h-[26px] text-coral" strokeWidth={1.75} />,

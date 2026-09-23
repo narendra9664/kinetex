@@ -7,6 +7,25 @@ export const shopifyClient = Client.buildClient({
 });
 
 /**
+ * Fetches every active product from the connected Shopify store via the
+ * Storefront API.
+ * @returns {Promise<Array>} Shopify Buy SDK product GraphModels.
+ */
+export async function fetchAllProducts() {
+  return shopifyClient.product.fetchAll();
+}
+
+/**
+ * Fetches a single product by its handle (the slug used in /product/:handle).
+ * @param {string} handle
+ * @returns {Promise<Object|null>}
+ */
+export async function fetchProductByHandle(handle) {
+  const product = await shopifyClient.product.fetchByHandle(handle);
+  return product || null;
+}
+
+/**
  * Helper function to create a checkout session in Shopify and redirect the customer.
  * @param {Array<{ variantId: string, quantity: number }>} lineItems
  */

@@ -1,0 +1,14 @@
+<script>
+document.fonts.ready.then(() => {
+  document.querySelectorAll(".page").forEach((pg) => {
+    const pad = pg.querySelector(".pad:not(.nofit)");
+    if (!pad || pg.dataset.nofit) return;
+    const avail = 1123 - 78 - (+pg.dataset.reserve || 0);
+    const top = pg.getBoundingClientRect().top;
+    for (let z = +(pg.dataset.max || 1.36); z >= 1; z -= 0.02) {
+      pad.style.zoom = z; pad.style.width = (794 / z) + "px";
+      if (pad.getBoundingClientRect().bottom - top <= avail) break;
+    }
+  });
+});
+</script>

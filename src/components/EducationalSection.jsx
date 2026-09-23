@@ -24,7 +24,7 @@ export default function EducationalSection() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-xl">
             <span className="eyebrow text-trust-blue mb-5 block">Support Guide</span>
-            <h2 className="heading-display text-navy text-5xl md:text-6xl">
+            <h2 className="heading-display text-navy text-[1.75rem] leading-[1.05] sm:text-5xl md:text-6xl">
               Not sure which brace you need?
             </h2>
           </div>

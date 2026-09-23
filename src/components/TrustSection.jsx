@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 const stats = [
   { value: "4.8/5", label: "Average rating" },
   { value: "10,000+", label: "Customers" },
-  { value: "30-day", label: "Returns" },
+  { value: "Secure", label: "Checkout" },
 ];
 
 export default function TrustSection() {
@@ -20,7 +20,7 @@ export default function TrustSection() {
           className="max-w-3xl mx-auto text-center"
         >
           <span className="eyebrow text-trust-blue mb-5 block">Trusted by Active People</span>
-          <h2 className="heading-display text-navy text-5xl md:text-6xl">
+          <h2 className="heading-display text-navy text-[1.75rem] leading-[1.05] sm:text-5xl md:text-6xl">
             Made for movement. Chosen for everyday life.
           </h2>
 
@@ -37,7 +37,7 @@ export default function TrustSection() {
           <p className="text-sm text-muted-brand mt-4">— Verified customer</p>
         </motion.div>
 
-        <div className="grid grid-cols-3 gap-6 mt-16 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 sm:mt-16 max-w-3xl mx-auto">
           {stats.map((s, i) => (
             <motion.div
               key={s.label}
@@ -45,9 +45,9 @@ export default function TrustSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="text-center border-l border-border first:border-l-0 px-4"
+              className="text-center sm:border-l border-border sm:first:border-l-0 px-4"
             >
-              <div className="heading-display text-navy text-4xl md:text-5xl">{s.value}</div>
+              <div className="heading-display text-navy text-[1.6rem] leading-[1.1] sm:text-4xl md:text-5xl">{s.value}</div>
               <div className="text-sm text-muted-brand mt-2">{s.label}</div>
             </motion.div>
           ))}

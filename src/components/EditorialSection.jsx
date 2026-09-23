@@ -12,8 +12,8 @@ export default function EditorialSection() {
       <div className="container-px max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Image */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="relative aspect-[4/5] overflow-hidden"
@@ -28,15 +28,15 @@ export default function EditorialSection() {
 
         {/* Text */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <span className="eyebrow text-trust-blue mb-5 block">
             Engineered for Everyday Movement
           </span>
-          <h2 className="heading-display text-navy text-5xl md:text-6xl leading-[0.95]">
+          <h2 className="heading-display text-navy text-[1.75rem] leading-[1.05] sm:text-5xl md:text-6xl leading-[0.95]">
             Support that works with your body — not against it.
           </h2>
           <p className="mt-8 text-lg text-muted-brand max-w-md leading-relaxed">

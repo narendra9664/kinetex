@@ -34,7 +34,7 @@ export default function HowItWorks() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="heading-display text-navy text-5xl md:text-6xl"
+            className="heading-display text-navy text-[1.75rem] leading-[1.05] sm:text-5xl md:text-6xl"
           >
             Three steps to moving with confidence.
           </motion.h2>
@@ -51,7 +51,7 @@ export default function HowItWorks() {
               className="bg-white p-8 md:p-10 group"
             >
               <div className="flex items-center justify-between mb-10">
-                <span className="heading-display text-navy/15 text-5xl group-hover:text-accent-green/40 transition-colors">
+                <span className="heading-display text-navy/15 text-4xl sm:text-5xl group-hover:text-accent-green/40 transition-colors">
                   {s.num}
                 </span>
                 <s.icon size={28} strokeWidth={1.5} className="text-navy" />
